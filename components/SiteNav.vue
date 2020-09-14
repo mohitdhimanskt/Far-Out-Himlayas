@@ -6,13 +6,13 @@
   >
     <div class="navbar-brand">
       <nuxt-link class="navbar-item" to="/">
-        <site-logo v-if="$siteConfig.logo === 'logo-component'" />
+        <!-- <site-logo v-if="$siteConfig.logo === 'logo-component'" />
         <img
           v-else
           :src="$siteConfig.logo"
           :alt="$siteConfig.siteName"
           class="logo"
-        />
+        /> -->
       </nuxt-link>
       <hamburger-button @click="active = !active" />
     </div>
@@ -24,11 +24,11 @@
       }"
     >
       <ul class="navbar-end">
-        <li
+        <!-- <li
           v-for="item in $siteConfig.mainMenu"
           :key="item.link"
-          class="navbar-item"
           @click="active = false"
+          class="navbar-item"
         >
           <component
             :is="item.link.startsWith('http') ? 'a' : 'nuxt-link'"
@@ -38,7 +38,7 @@
           >
             {{ item.name }}
           </component>
-        </li>
+        </li> -->
         <li class="navbar-item site-search-wrapper">
           <site-search />
         </li>
@@ -47,11 +47,11 @@
   </nav>
 </template>
 <script>
-import SiteSearch from '~/components/SiteSearch'
-import HamburgerButton from '~/components/HamburgerButton'
+// import SiteSearch from '~/components/SiteSearch'
+// import HamburgerButton from '~/components/HamburgerButton'
 export default {
   name: 'SiteNav',
-  components: { SiteSearch, HamburgerButton },
+  // components: { SiteSearch, HamburgerButton },
   data() {
     return {
       active: false
@@ -72,7 +72,6 @@ export default {
 .navbar-burger {
   height: auto;
 }
-
 .navbar-menu a {
   display: block;
 }

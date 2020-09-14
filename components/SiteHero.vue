@@ -1,12 +1,12 @@
 <template>
   <section :class="`hero is-medium hero-theme-${computedTheme}`">
     <img
-      class="hero-bg-img"
       :src="responsiveImage.src"
       :lazy="false"
       :srcset="responsiveImage.srcSet"
+      class="hero-bg-img"
     />
-    <div class="hero-body">
+    <!-- <div class="hero-body">
       <div class="container">
         <h1 class="title animated fadeInUp">
           {{ title }}
@@ -22,7 +22,7 @@
           <slot />
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
 </template>
 <script>
