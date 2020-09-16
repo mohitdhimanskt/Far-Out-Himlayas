@@ -27,7 +27,7 @@
                 ${title ? '' : 'empty-content-placeholder'}`
               "
             >
-              <!-- {{ title }} -->
+              {{ title }}
             </h3>
             <h4
               :class="{
