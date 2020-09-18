@@ -79,6 +79,6 @@
     "vue-template-compiler": "^2.6.11"
   },
   "engines": {
-    "node": "^9.0.0"
+    "node": ">=9.0.0"
   }
 }
